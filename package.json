@@ -21,7 +21,7 @@
   "dependencies": {
     "buffer-indexof-polyfill": "1.0.1",
     "long": "3.0.3",
-    "node-uuid": "1.4.7"
+    "uuid": "^11.0.3"
   },
   "devDependencies": {
     "@types/long": "^3.0.31",
