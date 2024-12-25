@@ -715,8 +715,8 @@ describe("c", function() {
 						assert.equal(bin_to_hexstr(c.serialize(typed.boolean(true))), "010000000a000000ff01");
 					});
 					describe("guid", function() {
-						it("guid", function() { // 0a369037-75d3-b24d-6721-5a1d44d4bed5
-							assert.equal(bin_to_hexstr(c.serialize(typed.guid("0a369037-75d3-b24d-6721-5a1d44d4bed5"))), "0100000019000000fe0a36903775d3b24d67215a1d44d4bed5");
+						it("guid", function() { // 0a369037-75d3-424d-9721-5a1d44d4bed5
+							assert.equal(bin_to_hexstr(c.serialize(typed.guid("0a369037-75d3-424d-9721-5a1d44d4bed5"))), "0100000019000000fe0a36903775d3424d97215a1d44d4bed5");
 						});
 						it("null", function() { // 0Ng
 							assert.equal(bin_to_hexstr(c.serialize(typed.guid(null))), "0100000019000000fe00000000000000000000000000000000");
@@ -947,7 +947,7 @@ describe("c", function() {
 							assert.equal(bin_to_hexstr(c.serialize(typed.booleans([true, false]))), "01000000100000000100020000000100");
 						});
 						it("guid", function() {
-							assert.equal(bin_to_hexstr(c.serialize(typed.guids(["0a369037-75d3-b24d-6721-5a1d44d4bed5", "0a369037-75d3-b24d-6721-5a1d44d4bed5"]))), "010000002e0000000200020000000a36903775d3b24d67215a1d44d4bed50a36903775d3b24d67215a1d44d4bed5");
+							assert.equal(bin_to_hexstr(c.serialize(typed.guids(["0a369037-75d3-424d-9721-5a1d44d4bed5", "0a369037-75d3-424d-9721-5a1d44d4bed5"]))), "010000002e0000000200020000000a36903775d3424d97215a1d44d4bed50a36903775d3424d97215a1d44d4bed5");
 						});
 						it("byte", function() {
 							assert.equal(bin_to_hexstr(c.serialize(typed.bytes([0, 1, 2, 3, 4]))), "01000000130000000400050000000001020304");
